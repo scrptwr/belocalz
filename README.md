@@ -34,7 +34,7 @@ application/json
 
 #### Example request
 
-```json
+```
 {
   "language_source": "en_US",
   "language_target": "es_ES",
@@ -54,7 +54,7 @@ application/json
 
 #### Response
 
-```json
+```
 200 OK
 
 {
@@ -98,12 +98,12 @@ GET /v1/orders?status=awaiting_analysis
 
 #### Response
 
-```json
+```
 200 OK
 
 [
   {
-  	"order_id": "685665",
+    "order_id": "685665",
     "reference": "2342",
     "status": "awaiting_analysis"
   }
@@ -130,7 +130,7 @@ GET /v1/order/873409
 
 #### Response
 
-```json
+```
 200 OK
 
 {
