@@ -1,17 +1,16 @@
 
 ## Order methods
 
-- Create order
-- Retrieve orders
-- Retrieve order
-- Approve order
-- Delete order
+- [Create order](#create-order)
+- [Retrieve orders](#retrieve-orders)
+- [Retrieve order](#retrieve-order)
+- [Approve order](#approve-order)
+- [Delete order](#delete-order)
 
 ## Job methods
 
-- Retrieve job
-- Retrieve jobs
-
+- [Retrieve job](#retrieve-job)
+- [Retrieve jobs](#retrieve-jobs)
 
 ---
 
@@ -304,4 +303,4 @@ GET /v1/job/654532
 
 - [`reference`] *\<string\>*
 - [`id`] *\<string\>* Job id
-- [`status`] *\<string\>* One of `awaiting_analysis`, `awaiting_approvement`, `in_translation` or `available`
+- [`status`] *\<string\>* One of `awaiting_analysis`, `awaiting_approvement`, `in_translation` or `available```
