@@ -12,8 +12,6 @@
 - [Retrieve job](#retrieve-job)
 - [Retrieve jobs](#retrieve-jobs)
 
----
-
 ## Create order
 `POST` /v1/order
 
@@ -78,8 +76,6 @@ application/json
 }
 ```
 
----
-
 ## Retrieve orders
 
 `GET` /v1/orders
@@ -113,8 +109,6 @@ GET /v1/orders?status=awaiting_analysis
   }
 ]
 ```
-
----
 
 ## Retrieve order
 
@@ -161,8 +155,6 @@ GET /v1/order/873409
   ]
 }
 ```
-
----
 
 ## Approve order
 
@@ -251,8 +243,6 @@ POST /v1/authorize/873409
 }
 ```
 
----
-
 ## Retrieve job
 
 `GET` /v1/job/{id}
@@ -289,8 +279,6 @@ GET /v1/job/654532
   "body_target": "<p>Hallo Welt</p>"
 }
 ```
-
----
 
 ## Retrieve jobs
 `GET` /v1/jobs
