@@ -291,4 +291,4 @@ GET /v1/job/654532
 
 - [`reference`] *\<string\>*
 - [`id`] *\<string\>* Job id
-- [`status`] *\<string\>* One of `awaiting_analysis`, `awaiting_approvement`, `in_translation` or `available```
+- [`status`] *\<string\>* One of `awaiting_analysis`, `awaiting_approvement`, `in_translation` or `available`
