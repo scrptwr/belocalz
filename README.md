@@ -15,11 +15,11 @@
 ## Create order
 `POST` /v1/order
 
-### Header parameters
+#### Header parameters
 
 - `Authorization` *\<string\>* "**Bearer XXXXX**" where XXXXX stands for your token. 
 
-### Body parameters
+#### Body parameters
 
 application/json
 
@@ -32,7 +32,7 @@ application/json
   - [`callback_translation`] *\<string\>* URL to hit after translation is ready
   - [`reference`] *\<string\>* Reference for local administration
 
-### Example request
+#### Example request
 
 ```json
 {
@@ -52,7 +52,7 @@ application/json
 }
 ```
 
-### Response
+#### Response
 
 ```json
 200 OK
@@ -80,23 +80,23 @@ application/json
 
 `GET` /v1/orders
 
-### Header parameters
+#### Header parameters
 
 - `Authorization` *\<string\>* "**Bearer XXXXX**" where XXXXX stands for your token.
 
-### Query parameters
+#### Query parameters
 
 - [`status`] *\<string\>* One of `awaiting_analysis`, `awaiting_approvement`, `in_translation` or `available`
 - [`id`] *\<string\>*
 - [`reference`] *\<string\>*
 
-### Example request
+#### Example request
 
 ```
 GET /v1/orders?status=awaiting_analysis
 ```
 
-### Response
+#### Response
 
 ```json
 200 OK
@@ -114,21 +114,21 @@ GET /v1/orders?status=awaiting_analysis
 
 `GET` /v1/order/{id}
 
-### Header parameters
+#### Header parameters
 
 - `Authorization` *\<string\>* "**Bearer XXXXX**" where XXXXX stands for your token.
 
-### Query parameters
+#### Query parameters
 
 - `id` *\<string\>* Order id
 
-### Example request
+#### Example request
 
 ```
 GET /v1/order/873409
 ```
 
-### Response
+#### Response
 
 ```json
 200 OK
@@ -162,21 +162,21 @@ GET /v1/order/873409
 
 Start the translation of an order.
 
-### Header parameters
+#### Header parameters
 
 - `Authorization` *\<string\>* "**Bearer XXXXX**" where XXXXX stands for your token.
 
-### Query parameters
+#### Query parameters
 
 - `id` *\<string\>* Order id
 
-### Example request
+#### Example request
 
 ```
 POST /v1/approve/873409
 ```
 
-### Response
+#### Response
 
 ```
 200 OK
@@ -204,7 +204,7 @@ POST /v1/approve/873409
 }
 ```
 
-### Out of credits response
+#### Out of credits response
 
 ```
 402 Payment Required
@@ -220,21 +220,21 @@ POST /v1/approve/873409
 
 Delete an unauthorized order.
 
-### Header parameters
+#### Header parameters
 
 - `Authorization` *\<string\>* "**Bearer XXXXX**" where XXXXX stands for your token.
 
-### Query parameters
+#### Query parameters
 
 - `id` *\<string\>* Order id
 
-### Example request
+#### Example request
 
 ```
 POST /v1/authorize/873409
 ```
 
-### Response
+#### Response
 
 ```
 200 OK
@@ -247,21 +247,21 @@ POST /v1/authorize/873409
 
 `GET` /v1/job/{id}
 
-### Header parameters
+#### Header parameters
 
 - `Authorization` *\<string\>* "**Bearer XXXXX**" where XXXXX stands for your token.
 
-### Query parameters
+#### Query parameters
 
 - `id` *\<string\>* Job id
 
-### Example request
+#### Example request
 
 ```
 GET /v1/job/654532
 ```
 
-### Response
+#### Response
 
 ```
 200 OK
@@ -283,11 +283,11 @@ GET /v1/job/654532
 ## Retrieve jobs
 `GET` /v1/jobs
 
-### Header parameters
+#### Header parameters
 
 - `Authorization` *\<string\>* "**Bearer XXXXX**" where XXXXX stands for your token.
 
-### Query parameters
+#### Query parameters
 
 - [`reference`] *\<string\>*
 - [`id`] *\<string\>* Job id
