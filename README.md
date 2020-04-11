@@ -25,11 +25,11 @@ application/json
 
 - `language_source` *\<string\>* Culture code e.g. `en_US`
 - `language_target` *\<string\>* Culture code e.g. `es_ES`
+- [`callback_analysis`] *\<string\>* URL to call after analysis is ready
+- [`callback_translation`] *\<string\>* URL to hit after translation is ready
 - `jobs` *\<array of objects\>*
   - `type` *\<string\>* One of `text` or `html`
   - `body_source` *\<string\>* String for translation
-  - [`callback_analysis`] *\<string\>* URL to call after analysis is ready
-  - [`callback_translation`] *\<string\>* URL to hit after translation is ready
   - [`reference`] *\<string\>* Reference for local administration
 
 #### Example request
